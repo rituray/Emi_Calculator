@@ -1,0 +1,112 @@
+.App {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    background-color: #082e1e;
+}
+
+.ETableCellText {
+    background-color: black;
+    color: white !important;
+    font-size: 16px !important;
+}
+
+.ETableCellVal {
+    text-align: right !important;
+    font-size: 18px !important;
+}
+
+.CalApp {
+    width: 50%;
+    border: 2px #CCC solid;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.CalHeading {
+    text-align: center;
+    color: black;
+}
+
+.nav-links {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    min-height: 10vh;
+    align-items: center;
+    font-family: inter;
+    background-color: grey;
+    color: white;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 32%;
+}
+
+nav .nav-links a {
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(126, 37, 37);
+}
+
+nav .nav-links a:hover {
+    border-bottom: 1px solid white;
+}
+
+nav .burger {
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+}
+
+@media all and (max-width:768px) {
+    nav .burger {
+        display: block;
+    }
+    nav .nav-links {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: grey;
+        padding: 40px;
+        width: 50%;
+        transform: translateX(-500px);
+        transition: 0.5s ease-in-out;
+    }
+    nav .nav-links li {
+        padding: 25px;
+        border-bottom: 1px solid #ccc;
+    }
+    nav .nav-links li:last-of-type {
+        border-bottom: 0px solid #ccc;
+    }
+    nav .nav-links a:hover {
+        border-bottom: 0px solid white;
+    }
+}
