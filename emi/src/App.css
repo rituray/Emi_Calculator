@@ -50,27 +50,28 @@ nav {
     min-height: 10vh;
     align-items: center;
     font-family: inter;
-    background-color: grey;
+    background-color: lightgrey;
     color: white;
 }
 
 nav .logo {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+    color: black;
 }
 
 nav .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 32%;
+    width: 38%;
 }
 
 nav .nav-links a {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
-    color: rgb(126, 37, 37);
+    color: black;
 }
 
 nav .nav-links a:hover {

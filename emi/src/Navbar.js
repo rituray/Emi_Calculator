@@ -6,8 +6,9 @@ function Navbar() {
     return (
         <div>
             <nav>
-                <div className="logo">EMI CALCULATOR</div>
+                <div className="logo">CARD INSIGHTER</div>
                 <ul className="nav-links" style={{transform:open?"translateX(0px)": ""}}>
+                    <Link to="/Financial_Calculator">Financial Calculator</Link>
                     <Link to="/Home">Home</Link>
                     <Link to="/Personal">Personal</Link>
                     <Link to="/Car">Car</Link>
